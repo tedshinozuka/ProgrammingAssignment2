@@ -1,8 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Caches matrix inversion to save CPU time
 
-## Write a short comment describing this function
-
+## makeCacheMatrix - object to hold the matrix inverted results
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
     set <- function(y) {
@@ -17,9 +15,7 @@ makeCacheMatrix <- function(x = matrix()) {
          getinverse = getinverse)
 }
 
-
-## Write a short comment describing this function
-
+## cacheSolve - take makeCacheMatrix object, caches results
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
   m <- x$getinverse()
